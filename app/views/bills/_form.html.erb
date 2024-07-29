@@ -13,8 +13,8 @@
 
   <div class="row my-3">
     <div  class="col-3">
-      <%= form.label :bill_type, "Bill Type", class: 'mb-2' %>
-      <%= form.collection_select(:bill_type, Bill.bill_types.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second, {:prompt => 'Bill Type'},{:class=>'form-control custom-select'}) %>
+      <%= form.label :bill_type, "Type", class: 'mb-2' %>
+      <%= form.collection_select(:bill_type, Bill.bill_types.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second, {:prompt => 'Type'},{:class=>'form-control custom-select'}) %>
     </div>
     <div  class="col-3">
       <%= form.label :amount, class: 'mb-2' %>
@@ -30,7 +30,7 @@
   <div class="row my-3">
     <div class='col-6'>
       <%= form.label :employee_id, class: 'mb-2'%>
-      <%= form.collection_select(:employee_id,  Employee.all, :id, :full_name, {:prompt => 'Select'},{:class=>'form-control custom-select'}) %>
+      <%= form.collection_select(:employee_id,  Employee.all, :id, :full_name, {:prompt => 'Select Employee'},{:class=>'form-control custom-select'}) %>
     </div>
   </div>
 

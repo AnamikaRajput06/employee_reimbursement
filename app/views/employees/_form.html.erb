@@ -41,7 +41,7 @@
 
     <div  class="col-4">
       <%= form.label :department_id, "Department", class: 'mb-2' %>
-      <%= form.collection_select(:department_id,  Department.all, :id, :name, {:prompt => 'Select'},{:class=>'form-control custom-select'}) %>
+      <%= form.collection_select(:department_id,  Department.all, :id, :name, {:prompt => 'Select Department'},{:class=>'form-control custom-select'}) %>
     </div>
   </div>
 
